@@ -1,12 +1,12 @@
 /* Shared CSS for all Pages */
 :root {
-    --bg-img: url('static/images/background-gradient.png');
+    --bg-img: url('background-gradient.png');
     --text-color: #000000;
     --name-color: #1a1618;
 }
 
 body.dark-mode {
-    --bg-img: url('static/images/background-gradient2.png');
+    --bg-img: url('background-gradient2.png');
     --text-color: #ffffff;
     --name-color: #ffffff;
 }
