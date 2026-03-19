@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix Ogon</title>
+    <style>
+        :root {
+            --bg-img: url('static/images/background-gradient.png');
+            --text-color: #000000;
+            --name-color: #1a1618;
+        }
+
+        body.dark-mode {
+            --bg-img: url('static/images/background-gradient2.png');
+            --text-color: #ffffff;
+            --name-color: #ffffff;
+        }
+
+        body {
+            margin: 0; padding: 0; height: 100vh;
+            display: flex; align-items: center; justify-content: center;
+            font-family: -apple-system, system-ui, sans-serif;
+            background-image: var(--bg-img);
+            background-color: #000;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--text-color);
+            transition: background 0.8s ease-in-out, color 0.5s ease;
+            overflow: hidden;
+        }
+
+        .content {
+            text-align: center;
+            animation: fadeInUp 1.2s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 6rem;
+            text-transform: uppercase;
+            color: var(--name-color);
+            margin: 0;
+            letter-spacing: -1px;
+            transition: color 0.5s ease;
+        }
+
+        p {
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        nav { margin-top: 30px; }
+        nav a { 
+            color: inherit; 
+            margin: 0 15px; 
+            text-decoration: none; 
+            font-size: 0.9rem;
+            border-bottom: 1px solid transparent;
+            transition: 0.3s;
+        }
+        nav a:hover { border-bottom: 1px solid var(--text-color); }
+
+        .toggle-btn {
+            position: fixed; bottom: 30px; right: 30px;
+            background: rgba(128, 128, 128, 0.2); 
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--text-color);
+            color: var(--text-color); padding: 10px 20px;
+            cursor: pointer; border-radius: 30px;
+            font-size: 12px; text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 100;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="theme-btn" class="toggle-btn" onclick="toggleTheme()">Switch to Dark</button>
+    
+    <div class="content">
+        <h1>Felix Ogon</h1>
+        <p>Student @ ETH Zurich</p>
+        <nav>
+            <a href="#">Projects</a>
+            <a href="#">Writing</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.getElementById('theme-btn');
+            
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                btn.innerHTML = "Switch to Light";
+            } else {
+                btn.innerHTML = "Switch to Dark";
+            }
+        }
+    </script>
+</body>
+</html>

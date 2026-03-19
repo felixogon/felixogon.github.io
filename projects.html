@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Felix Ogon</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .activity-card { margin-bottom: 40px; padding: 20px; border-left: 1px solid var(--text-color); }
+        .activity-title a { color: inherit; text-decoration: none; font-weight: bold; font-size: 1.3rem; text-transform: uppercase; }
+        .activity-title a:hover { text-decoration: underline; }
+        .activity-org { font-style: italic; opacity: 0.8; margin-bottom: 10px; font-size: 0.9rem; }
+        .activity-card ul { padding-left: 15px; margin-top: 10px; }
+        .activity-card li { margin-bottom: 8px; line-height: 1.5; font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+    <script>if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');</script>
+    <button id="theme-btn" class="toggle-btn" onclick="toggleTheme()">Switch to Dark</button>
+    <nav style="text-align: left; padding: 20px;"><a href="index.html">← Back</a></nav>
+    <div class="content">
+        <h1 class="page-title">Experience</h1>
+        <div class="activity-card"><div class="activity-title"><a href="https://s2s.vc/" target="_blank">S2S Ventures</a></div><div class="activity-org">Software Engineer | Zurich, Switzerland | Feb 2026 - Present</div><ul><li>Leveraging data to make informed investment decisions for this 11M € student-led VC fund by building a sourcing agent to filter companies of interest via targeted data scraping.</li><li>Enhancing existing software infrastructure and architecting a dedicated "About Us" and "Partnerships" interface to extend the platform’s web presence.</li></ul></div>
+        <div class="activity-card"><div class="activity-title"><a href="https://www.orcahand.com/" target="_blank">ORCA Dexterity, Inc.</a></div><div class="activity-org">Freelance Robotics Engineer | Zurich, Switzerland | Jun 2025 - Feb 2026</div><ul><li>Assembled and calibrated a 17-DoF tendon-driven robotic hand with integrated tactile sensors and automatic tendon-tension compensation; trained via 7+ hour uninterrupted imitation learning, achieving human-like dexterity.</li></ul></div>
+        <div class="activity-card"><div class="activity-title"><a href="https://www.acentauri.ch/" target="_blank">aCentauri Solar Racing</a></div><div class="activity-org">Alsco Developer | Zürich, Switzerland | Mar 2025 - Oct 2025</div><ul><li>Engineered a scalable pipeline for surrogate modelling of aerodynamic drag by automating the variation of up to 2,000 Siemens NX parameters to generate thousands of 3D geometries.</li><li>Converted CAD data to point clouds and trained a RegPointNet model to predict drag coefficients, replacing CFD with near-instant inference.</li><li>Enabled efficient exploration of high-dimensional design spaces, significantly accelerating ML-driven aerodynamic optimization.</li></ul></div>
+        <div class="activity-card"><div class="activity-title"><a href="https://en.rattpack.eu/" target="_blank">Rattpack Group</a></div><div class="activity-org">Sales Intern | Vienna, Austria | Oct 2022 - Dec 2022</div><ul><li>Handled and tracked offset-print quality issues for clients such as Bravecto and Takeda, including color shifts, misregistration, and coating problems.</li><li>Gained insight into a 4M € automation upgrade, focusing on inline quality checks, waste reduction, and more sustainable materials and production steps.</li></ul></div>
+    </div>
+    <script src="script.js"></script>
+    <script>if (document.body.classList.contains('dark-mode')) document.getElementById('theme-btn').innerHTML = "Switch to Light";</script>
+</body>
+</html>

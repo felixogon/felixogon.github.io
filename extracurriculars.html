@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracurriculars | Felix Ogon</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .activity-card { margin-bottom: 40px; padding: 20px; border-left: 1px solid var(--text-color); }
+        .activity-title a { color: inherit; text-decoration: none; font-weight: bold; font-size: 1.3rem; text-transform: uppercase; }
+        .activity-title a:hover { text-decoration: underline; }
+        .activity-org { font-style: italic; opacity: 0.8; margin-bottom: 10px; font-size: 0.9rem; }
+        .activity-card ul { padding-left: 15px; margin-top: 10px; }
+        .activity-card li { margin-bottom: 8px; line-height: 1.5; font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+    <script>if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');</script>
+    <button id="theme-btn" class="toggle-btn" onclick="toggleTheme()">Switch to Dark</button>
+    <nav style="text-align: left; padding: 20px;"><a href="index.html">← Back</a></nav>
+    <div class="content">
+        <h1 class="page-title">Extracurricular Activities</h1>
+        <div class="activity-card">
+            <div class="activity-title"><a href="https://www.firstmomentum.vc/" target="_blank">First Momentum Ventures</a></div>
+            <div class="activity-org">Venture Scout | Sep 2025 - Present</div>
+            <ul><li>Sourcing and technically evaluating early-stage startups for 35M € fund in Deep Tech, Industrial Tech, Energy, and Novel Compute, assessing scientific merit, scalability, and potential market impact to inform investment decisions.</li></ul>
+        </div>
+        <div class="activity-card">
+            <div class="activity-title"><a href="https://www.citadel.com/careers/programs-and-events/terminal/" target="_blank">Citadel Terminal Programming Competition</a></div>
+            <div class="activity-org">Final 8 Participant | May 2024</div>
+            <ul><li>Developed modular Python algorithm for dynamic defense optimization and adaptive offense logic using heuristic pathfinding and state-based resource allocation; implemented layered turret reinforcement, enemy-health–driven attack switching, and simulation-based strategy tuning through iterative data analysis and risk–reward calibration.</li></ul>
+        </div>
+        <div class="activity-card">
+            <div class="activity-title"><a href="https://www.ethrobotics.ch/" target="_blank">ETH Robotics Club</a></div>
+            <div class="activity-org">Member | Zurich, Switzerland</div>
+            <p>The club regularly organizes events such as hackathons and workshops with experts in the robotics industry.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>if (document.body.classList.contains('dark-mode')) document.getElementById('theme-btn').innerHTML = "Switch to Light";</script>
+</body>
+</html>

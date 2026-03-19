@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing | Felix Ogon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');</script>
+
+    <button id="theme-btn" class="toggle-btn" onclick="toggleTheme()">Switch to Dark</button>
+    
+    <nav style="text-align: left; padding: 20px;"><a href="index.html">← Back</a></nav>
+    
+    <div class="content">
+        <h1 class="page-title">Writing</h1>
+        
+        <div style="padding: 20px; border-left: 1px solid var(--text-color); opacity: 0.8;">
+            <p>I am currently documenting my work in Robotics, surrogate modelling, and the venture landscape in Zurich. Technical articles and research summaries will be posted here soon.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>if (document.body.classList.contains('dark-mode')) document.getElementById('theme-btn').innerHTML = "Switch to Light";</script>
+</body>
+</html>

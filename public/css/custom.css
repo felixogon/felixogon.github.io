@@ -1,0 +1,32 @@
+/* 1. Target the absolute root of the page */
+html {
+    background: url('/images/background-gradient.png') no-repeat center center fixed !important;
+    background-size: cover !important;
+}
+
+/* 2. Force every other layer to be invisible */
+body, .main, .list, .page, .header, .footer, #menu, .wrapper {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* 3. Text Styling - Black text for better contrast on light gradients */
+body, h1, h2, h3, p, a, .post-title, .post-content {
+    color: #1d1d1f !important; /* Apple-style dark gray/black */
+}
+
+/* 4. The Profile Card - "Glassmorphism" look */
+.profile_inner {
+    background: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+/* 5. Fix the dark/light toggle button so it doesn't break the look */
+#theme-toggle {
+    display: none !important;
+}

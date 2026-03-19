@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix Ogon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');</script>
+    <button id="theme-btn" class="toggle-btn" onclick="toggleTheme()">Switch to Dark</button>
+    <div class="content home-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+        <h1>Felix Ogon</h1>
+        <p class="subtitle">ETH Zurich | Robotics & AI</p>
+        <nav>
+            <a href="projects.html">Experience</a>
+            <a href="writing.html">Writing</a>
+            <a href="extracurriculars.html">Extracurriculars</a>
+        </nav>
+        <footer>
+            <a href="https://www.linkedin.com/in/felix-ogon-599823292/" target="_blank">LinkedIn</a> / 
+            <a href="https://github.com/felixogon" target="_blank">GitHub</a> / 
+            <a href="mailto:felixmichael.ogon@gmail.com">Email</a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script>if (document.body.classList.contains('dark-mode')) document.getElementById('theme-btn').innerHTML = "Switch to Light";</script>
+</body>
+</html>

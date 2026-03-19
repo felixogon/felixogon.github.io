@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Experiences on Felix Ogon</title>
+    <link>http://localhost:65099/experience/</link>
+    <description>Recent content in Experiences on Felix Ogon</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:65099/experience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software Engineer @ S2S Ventures</title>
+      <link>http://localhost:65099/experience/s2s/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:65099/experience/s2s/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Leveraging data to make informed investment decisions for an 11M € student-led VC fund[cite: 20, 23, 24].&lt;/li&gt;
+&lt;li&gt;Building a sourcing agent to filter companies of interest via targeted data scraping[cite: 24].&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Freelance Robotics Engineer @ ORCA Dexterity</title>
+      <link>http://localhost:65099/experience/orca/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:65099/experience/orca/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Assembled and calibrated a 17-DoF tendon-driven robotic hand with integrated tactile sensors[cite: 26, 27, 29].&lt;/li&gt;
+&lt;li&gt;Trained via 7+ hour uninterrupted imitation learning, achieving human-like dexterity[cite: 30].&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Alsco Developer @ aCentauri Solar Racing</title>
+      <link>http://localhost:65099/experience/acentauri/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:65099/experience/acentauri/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Engineered a scalable pipeline for surrogate modelling of aerodynamic drag[cite: 31, 32, 34].&lt;/li&gt;
+&lt;li&gt;Trained a RegPointNet model to predict drag coefficients, replacing CFD with near-instant inference[cite: 35].&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

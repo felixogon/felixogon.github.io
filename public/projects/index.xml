@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Projects on Felix Ogon</title>
+    <link>http://localhost:65099/projects/</link>
+    <description>Recent content in Projects on Felix Ogon</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:65099/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Citadel Terminal Programming Competition</title>
+      <link>http://localhost:65099/projects/citadel/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:65099/projects/citadel/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Final 8 Participant[cite: 50, 51].&lt;/li&gt;
+&lt;li&gt;Developed modular Python algorithm for dynamic defense optimization using heuristic pathfinding[cite: 53, 54].&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
