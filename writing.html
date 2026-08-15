@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Writing | Felix Ogon</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .activity-card { margin-bottom: 40px; padding: 20px; border-left: 1px solid var(--text-color); }
+        .activity-title a { color: inherit; text-decoration: none; font-weight: bold; font-size: 1.3rem; text-transform: uppercase; }
+        .activity-title a:hover { text-decoration: underline; }
+        .activity-org { font-style: italic; opacity: 0.8; margin-bottom: 10px; font-size: 0.9rem; }
+        .activity-card ul { padding-left: 15px; margin-top: 10px; }
+        .activity-card li { margin-bottom: 8px; line-height: 1.5; font-size: 0.95rem; }
+    </style>
 </head>
 <body>
     <script>if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');</script>
@@ -16,8 +24,8 @@
     <div class="content">
         <h1 class="page-title">Writing</h1>
         
-        <div style="padding: 20px; border-left: 1px solid var(--text-color); opacity: 0.8;">
-            <p>I am currently documenting my work in Robotics, surrogate modelling, and the venture landscape in Zurich. Technical articles and research summaries will be posted here soon.</p>
+        <div class="activity-card"><div class="activity-title"><a href="papers/semg_smart_wearables_review.pdf" target="_blank">sEMG Signal Processing for Real-Time Gesture Recognition in Wearables</a></div>
+            <div class="activity-org">Fun literature review I wrote with the supervision of Prof. Dr. Robert Riener and Dr. Diego Paez-Granados at the Spinal Cord Injury &amp; Artificial Intelligence (SCAI) Lab</div>
         </div>
     </div>
 
