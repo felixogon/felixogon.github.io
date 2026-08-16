@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felix Ogon</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Prevent scrolling on the home landing page only */
+        html, body { height: 100%; overflow: hidden; }
+        .home-content { padding: 0; height: 100vh; box-sizing: border-box; }
+    </style>
 </head>
 <body>
     <script>if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');</script>
