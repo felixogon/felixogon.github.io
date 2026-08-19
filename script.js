@@ -12,3 +12,13 @@ function toggleTheme() {
         if(btn) btn.innerHTML = "Switch to Dark";
     }
 }
+
+const unicornCursor = document.createElement('span');
+unicornCursor.className = 'unicorn-cursor';
+unicornCursor.textContent = '\u{1F984}';
+document.body.appendChild(unicornCursor);
+
+document.addEventListener('mousemove', (event) => {
+    unicornCursor.style.left = `${event.clientX}px`;
+    unicornCursor.style.top = `${event.clientY}px`;
+});
