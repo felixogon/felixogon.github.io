@@ -24,7 +24,7 @@ body {
 }
 
 *, *::before, *::after {
-    cursor: url("rocket-cursor.svg") 8 8, auto !important;
+    cursor: url("unicorn-cursor.svg") 8 8, auto !important;
 }
 
 @keyframes fadeInUp {
