@@ -23,8 +23,8 @@ body {
     transition: background 0.8s ease-in-out, color 0.5s ease;
 }
 
-*, *::before, *::after {
-    cursor: url("unicorn-cursor.svg") 8 8, auto !important;
+a, button {
+    cursor: pointer;
 }
 
 @keyframes fadeInUp {
