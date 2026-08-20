@@ -1,26 +1,56 @@
 /* Shared CSS for all Pages */
 :root {
-    --bg-img: url('background-gradient.png');
     --text-color: #000000;
     --name-color: #1a1618;
 }
 
 body.dark-mode {
-    --bg-img: url('background-gradient2.png');
     --text-color: #ffffff;
     --name-color: #ffffff;
+}
+
+html.theme-preload *, html.theme-preload *::before, html.theme-preload *::after {
+    transition: none !important;
 }
 
 body {
     margin: 0; padding: 0; min-height: 100vh;
     font-family: -apple-system, system-ui, sans-serif;
-    background-image: var(--bg-img);
     background-color: #000;
+    color: var(--text-color);
+    isolation: isolate;
+    position: relative;
+    transition: color 0.5s ease;
+}
+
+body::before, body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: var(--text-color);
-    transition: background 0.8s ease-in-out, color 0.5s ease;
+    pointer-events: none;
+    transition: opacity 0.35s ease-in-out;
+}
+
+body::before {
+    background-image: url('background-gradient.png');
+    opacity: 1;
+}
+
+body::after {
+    background-image: url('background-gradient2.png');
+    opacity: 0;
+}
+
+body.dark-mode::before {
+    opacity: 0;
+}
+
+body.dark-mode::after {
+    opacity: 1;
 }
 
 a, button {

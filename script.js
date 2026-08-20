@@ -12,3 +12,7 @@ function toggleTheme() {
         if (btn) btn.innerHTML = "Switch to Dark";
     }
 }
+
+requestAnimationFrame(() => {
+    document.documentElement.classList.remove('theme-preload');
+});
