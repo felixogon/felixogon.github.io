@@ -125,3 +125,96 @@ footer a:hover { text-decoration: underline; }
     font-size: 12px; text-transform: uppercase;
     letter-spacing: 1px; z-index: 100; transition: 0.3s;
 }
+
+/* Project portfolio */
+.page-nav { text-align: left; padding: 20px; margin-top: 0; }
+.page-nav a { margin: 0; }
+.portfolio-content, .project-detail { padding-top: 25px; }
+.portfolio-intro, .section-intro { max-width: 680px; line-height: 1.65; opacity: 0.85; }
+.portfolio-intro { margin: -30px 0 35px; }
+.portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+.portfolio-card {
+    display: flex; flex-direction: column; min-width: 0; overflow: hidden;
+    color: inherit; text-decoration: none; border: 1px solid rgba(128, 128, 128, 0.55);
+    background: rgba(128, 128, 128, 0.1); backdrop-filter: blur(10px);
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+.portfolio-card:hover { transform: translateY(-4px); background-color: rgba(128, 128, 128, 0.18); }
+.portfolio-card:focus-visible, .project-repo-link:focus-visible, .project-back-link:focus-visible {
+    outline: 2px solid var(--text-color); outline-offset: 4px;
+}
+.portfolio-card-art, .media-placeholder-visual {
+    min-height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 10px; text-align: center; background-color: rgba(128, 128, 128, 0.18);
+    background-image: linear-gradient(135deg, rgba(20, 33, 54, 0.1), rgba(20, 33, 54, 0.48));
+}
+.portfolio-card-art-image { display: block; width: 100%; height: 180px; object-fit: cover; }
+.art-neuer { background-image: linear-gradient(135deg, rgba(44, 75, 120, 0.28), rgba(20, 33, 54, 0.7)); }
+.art-orca { background-image: linear-gradient(135deg, rgba(37, 96, 93, 0.28), rgba(20, 33, 54, 0.7)); }
+.art-delivery { background-image: linear-gradient(135deg, rgba(153, 101, 46, 0.28), rgba(20, 33, 54, 0.7)); }
+.art-kine { background-image: linear-gradient(135deg, rgba(116, 74, 140, 0.3), rgba(20, 33, 54, 0.7)); }
+.portfolio-card-art span, .media-prompt {
+    font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.75;
+}
+.portfolio-card-copy { padding: 20px; }
+.project-meta { margin: 0 0 10px; font-size: 0.8rem; line-height: 1.6; opacity: 0.8; }
+.project-meta span { display: block; }
+.portfolio-card h2 { margin: 0 0 12px; font-size: 1.2rem; line-height: 1.3; text-transform: uppercase; }
+.portfolio-card-copy > p:not(.project-meta) { margin: 0; line-height: 1.55; font-size: 0.92rem; }
+.card-action { display: inline-block; margin-top: 22px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 1px; }
+.project-header { margin-bottom: 42px; }
+.project-header .page-title { margin: 0 0 18px; }
+.project-summary { max-width: 740px; font-size: 1.1rem; line-height: 1.65; }
+.project-repo-link, .project-back-link { display: inline-block; color: inherit; margin-top: 12px; text-underline-offset: 4px; }
+.project-section { margin: 42px 0; }
+.section-title { font-family: 'Impact', 'Arial Black', sans-serif; font-size: 1.45rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.section-intro { margin: -8px 0 20px; }
+.media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+.media-placeholder { margin: 0; overflow: hidden; border: 1px solid rgba(128, 128, 128, 0.5); background: rgba(128, 128, 128, 0.1); }
+.media-placeholder-visual { min-height: 170px; }
+.media-asset { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: rgba(0, 0, 0, 0.2); }
+.media-placeholder video.media-asset { object-fit: contain; }
+.media-placeholder img.media-asset { cursor: zoom-in; }
+.media-placeholder img.media-asset:focus-visible, .media-expand-button:focus-visible {
+    outline: 2px solid var(--text-color); outline-offset: -3px;
+}
+.media-type { padding: 5px 10px; border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 20px; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 1px; }
+.media-placeholder figcaption { display: grid; gap: 6px; padding: 14px; line-height: 1.45; }
+.media-placeholder figcaption strong { font-size: 0.95rem; }
+.media-placeholder figcaption span { font-size: 0.83rem; opacity: 0.8; }
+.media-expand-button {
+    justify-self: start; padding: 6px 10px; border: 1px solid currentColor; border-radius: 20px;
+    color: inherit; background: transparent; font: inherit; font-size: 0.75rem; cursor: pointer;
+}
+.media-viewer {
+    width: min(94vw, 1500px); height: min(94vh, 1100px); max-width: none; max-height: none;
+    padding: 16px; border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 8px;
+    color: white; background: rgba(15, 15, 18, 0.97);
+}
+.media-viewer::backdrop { background: rgba(0, 0, 0, 0.82); backdrop-filter: blur(5px); }
+.media-viewer-toolbar { display: flex; justify-content: space-between; gap: 12px; }
+.media-viewer-toolbar button {
+    min-width: 40px; padding: 8px 12px; border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 5px; color: white; background: rgba(255, 255, 255, 0.1); cursor: pointer;
+}
+.image-zoom-controls { display: flex; gap: 8px; }
+.media-viewer-stage {
+    display: flex; align-items: flex-start; justify-content: center; overflow: auto;
+    width: 100%; height: calc(100% - 78px); margin-top: 12px;
+}
+.media-viewer-stage img { display: block; flex: none; max-width: none; }
+.expanded-video { width: 100%; height: 100%; object-fit: contain; }
+.media-viewer-caption { margin: 8px 0 0; font-size: 0.85rem; opacity: 0.85; }
+.image-zoom-controls[hidden] { display: none; }
+.project-story { max-width: 760px; line-height: 1.7; }
+.project-story .section-title:not(:first-child) { margin-top: 32px; }
+.project-back-link { margin: 10px 0 30px; }
+
+@media (max-width: 600px) {
+    .content.portfolio-content, .content.project-detail { padding: 25px 18px 50px; }
+    .portfolio-content .page-title { margin-bottom: 42px; }
+    .portfolio-intro { margin-top: -22px; }
+    .portfolio-grid, .media-grid { grid-template-columns: 1fr; }
+    .project-header .page-title { font-size: 1.8rem; }
+    .toggle-btn { bottom: 16px; right: 16px; }
+}

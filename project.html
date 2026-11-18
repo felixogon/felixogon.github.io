@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | Felix Ogon</title>
+    <link rel="stylesheet" href="style.css?v=portfolio-media-viewer-20261118">
+</head>
+<body>
+    <script>document.documentElement.classList.add('theme-preload'); if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');</script>
+    <button id="theme-btn" class="toggle-btn" onclick="toggleTheme()">Switch to Dark</button>
+    <nav class="page-nav"><a href="portfolio.html">← All projects</a></nav>
+    <main id="project-detail" class="content project-detail" aria-live="polite">
+        <p>Loading project…</p>
+    </main>
+    <dialog class="media-viewer" aria-label="Expanded project media">
+        <div class="media-viewer-toolbar">
+            <div class="image-zoom-controls">
+                <button type="button" data-zoom="out" aria-label="Zoom out">−</button>
+                <button type="button" data-zoom="reset">Reset zoom</button>
+                <button type="button" data-zoom="in" aria-label="Zoom in">+</button>
+            </div>
+            <button type="button" class="media-viewer-close">Close</button>
+        </div>
+        <div class="media-viewer-stage"></div>
+        <p class="media-viewer-caption"></p>
+    </dialog>
+    <script src="script.js?v=theme-fix-20260819"></script>
+    <script src="portfolio.js?v=neuer-in-progress-20261118"></script>
+    <script>if (document.body.classList.contains('dark-mode')) document.getElementById('theme-btn').innerHTML = "Switch to Light";</script>
+</body>
+</html>

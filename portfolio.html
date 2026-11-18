@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio | Felix Ogon</title>
+    <link rel="stylesheet" href="style.css?v=portfolio-20261118">
+</head>
+<body>
+    <script>document.documentElement.classList.add('theme-preload'); if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');</script>
+    <button id="theme-btn" class="toggle-btn" onclick="toggleTheme()">Switch to Dark</button>
+    <nav class="page-nav"><a href="index.html">← Back</a></nav>
+    <main class="content portfolio-content">
+        <h1 class="page-title">Project Portfolio</h1>
+        <p class="portfolio-intro">Selected projects across robotics, computational imaging, and autonomous systems.</p>
+
+        <section class="portfolio-grid" aria-label="Projects">
+            <a class="portfolio-card" href="project.html?id=neuer">
+                <img class="portfolio-card-art portfolio-card-art-image" src="media/neuer/neuer-descriptor.png" alt="Unitree G1 humanoid robot in the lab">
+                <div class="portfolio-card-copy">
+                    <p class="project-meta">AMBER Lab, Caltech</p>
+                    <h2>Neuer: Vision-Based Humanoid Goalkeeper</h2>
+                    <p>Giving a Unitree G1 its own vision: onboard cameras track a shot and predict where it will cross the goal line, without motion capture.</p>
+                    <span class="card-action">Explore project <span aria-hidden="true">→</span></span>
+                </div>
+            </a>
+
+            <a class="portfolio-card" href="project.html?id=kine">
+                <img class="portfolio-card-art portfolio-card-art-image" src="media/kine/kine-descriptor.png" alt="Side-by-side comparison of baseline and Kine reconstructions of HL Tau">
+                <div class="portfolio-card-copy">
+                    <p class="project-meta">Bouman Lab, Caltech · Team of 4</p>
+                    <h2>Kine: Neural-Field Imaging at Scale</h2>
+                    <p>I led positional-encoding tuning and validated GPU NUFFT imaging as our team scaled neural-field reconstruction to HL Tau’s 33.48 million measurements.</p>
+                    <span class="card-action">Explore project <span aria-hidden="true">→</span></span>
+                </div>
+            </a>
+
+            <a class="portfolio-card" href="project.html?id=orca">
+                <img class="portfolio-card-art portfolio-card-art-image" src="media/orca-hand-thumbnail.png" alt="ORCA Dexterity robotic hand">
+                <div class="portfolio-card-copy">
+                    <p class="project-meta">ORCA Dexterity</p>
+                    <h2>ORCA Dexterous Robotic Hands</h2>
+                    <p>Assembled, calibrated, and tested 10 tactile 17-DoF tendon-driven hands, shipped to customers at under one-seventh the cost of commercial hands.</p>
+                    <span class="card-action">Explore project <span aria-hidden="true">→</span></span>
+                </div>
+            </a>
+
+            <a class="portfolio-card" href="project.html?id=delivery-robot">
+                <img class="portfolio-card-art portfolio-card-art-image" src="media/delivery-robot/robot-thumbnail.jpg" alt="Autonomous delivery robot on its course">
+                <div class="portfolio-card-copy">
+                    <p class="project-meta">ETH Zurich · Product Development Group</p>
+                    <h2>Autonomous Delivery Robot</h2>
+                    <p>Built an Arduino robot under 1.5 kg that folds into a 210 mm cube and delivers 40 spheres to 8 targets in 4 minutes.</p>
+                    <span class="card-action">Explore project <span aria-hidden="true">→</span></span>
+                </div>
+            </a>
+        </section>
+    </main>
+    <script src="script.js?v=theme-fix-20260819"></script>
+    <script>if (document.body.classList.contains('dark-mode')) document.getElementById('theme-btn').innerHTML = "Switch to Light";</script>
+</body>
+</html>
