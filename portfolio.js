@@ -127,19 +127,6 @@ function openImageViewer(image, caption) {
     mediaViewer.showModal();
 }
 
-function openVideoViewer(video, caption) {
-    const expandedVideo = document.createElement("video");
-    expandedVideo.className = "expanded-video";
-    expandedVideo.controls = true;
-    expandedVideo.autoplay = true;
-    expandedVideo.playsInline = true;
-    expandedVideo.src = video.currentSrc || video.querySelector("source").src;
-    mediaViewerStage.replaceChildren(expandedVideo);
-    mediaViewerCaption.textContent = caption;
-    zoomControls.hidden = true;
-    mediaViewer.showModal();
-}
-
 mediaViewer.querySelector(".media-viewer-close").addEventListener("click", () => mediaViewer.close());
 mediaViewer.addEventListener("click", event => {
     if (event.target === mediaViewer) mediaViewer.close();
@@ -238,14 +225,6 @@ if (!project) {
         const figcaption = document.createElement("figcaption");
         appendTextElement(figcaption, "strong", "", title);
         appendTextElement(figcaption, "span", "", caption);
-        if (src && type === "Video") {
-            const expandButton = document.createElement("button");
-            expandButton.className = "media-expand-button";
-            expandButton.type = "button";
-            expandButton.textContent = "Expand video";
-            expandButton.addEventListener("click", () => openVideoViewer(figure.querySelector("video"), caption));
-            figcaption.append(expandButton);
-        }
         figure.append(figcaption);
         mediaGrid.append(figure);
     }
